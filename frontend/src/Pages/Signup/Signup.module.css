@@ -1,0 +1,37 @@
+#signupMainDiv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.6px;
+}
+
+#signupDiv {
+    width: 35%;
+    border: 1px solid black;
+    background-color: #fbb5b5;
+    border-radius: 15px;
+    padding: 20px 40px 20px 40px;
+}
+
+#signupHead {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inputes {
+    margin-bottom: 20px;
+    letter-spacing: 0.6px;
+}
+
+#signupButton {
+    display: block;
+    margin: auto;
+    letter-spacing: 0.6px;
+    background-color: #fae5e5;
+}
+
+#signupButton:hover {
+    background-color: #f1cbcb;
+}

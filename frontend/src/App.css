@@ -1,0 +1,28 @@
+.App {
+  background-color: #fdfdf9;
+  display: flex;
+  justify-content: left;
+  min-height: 100vh;
+  letter-spacing: 0.6px;
+}
+
+#navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+#leftnav {
+  margin-left: 20px;
+}
+
+#rightnav {
+  display: flex;
+  justify-content: center;
+}
+
+#rightnav h3 {
+  margin-right: 20px;
+}

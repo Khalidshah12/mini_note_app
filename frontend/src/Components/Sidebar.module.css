@@ -1,0 +1,34 @@
+#sidebar {
+    border: 1px solid black;
+    height: 100vh;
+    width: 15%;
+    position: fixed;
+    background-color: #fff;
+}
+
+#appLogo {
+    width: 100%;
+    height: 80px;
+}
+
+/* #sidebarNamesDiv {
+    
+} */
+
+.sidebarUserName {
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    font-weight: 500;
+    background-color: rgb(247, 196, 125);
+}
+
+.sidebarNames {
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    font-weight: 500;
+}
+
+.sidebarNames:hover {
+    background-color: rgb(156, 143, 143);
+    cursor: pointer;
+}
