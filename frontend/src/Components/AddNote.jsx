@@ -1,15 +1,15 @@
-import { Box, Button, Heading, Input } from '@chakra-ui/react';
+import { Box, Button, Heading, Input, useToast } from '@chakra-ui/react';
 import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { getTodos } from '../Redux/AppReducer/action';
-import styles from './AddTodo.module.css'
+import styles from './AddNote.module.css'
 
-export default function AddTodo() {
+export default function AddNote() {
     const [title, settitle] = useState('');
     const [desc, setDesc] = useState('');
-
+    const toast = useToast();
     const dispatch = useDispatch()
     const { token } = useSelector((store) => {
         return {
@@ -37,6 +37,14 @@ export default function AddTodo() {
             }
             addTodo(payload).then((r) => {
                 console.log(r)
+                toast({
+                    title: "Congratulation",
+                    description: "Note Added Successfull",
+                    status: "success",
+                    position: "top",
+                    duration: 2500,
+                    isClosable: true,
+                });
             }).catch((e) => {
                 console.log(e)
             })

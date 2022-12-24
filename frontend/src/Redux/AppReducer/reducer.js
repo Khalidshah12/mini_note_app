@@ -1,7 +1,7 @@
 import * as types from './actionTypes'
 
 const initialState = {
-    todos: [],
+    notes: [],
     isLoading: false,
     isError: false
 }
@@ -16,12 +16,12 @@ export const reducer = (state = initialState, action) => {
         }
         case types.GET_TODOS_SUCCESS: {
             return {
-                ...state, isLoading: false, isError: false, todos: payload
+                ...state, isLoading: false, isError: false, notes: payload
             }
         }
         case types.GET_TODOS_FAILURE: {
             return {
-                ...state, isLoading: false, isError: true, todos: []
+                ...state, isLoading: false, isError: true, notes: []
             }
         }
         default: return state

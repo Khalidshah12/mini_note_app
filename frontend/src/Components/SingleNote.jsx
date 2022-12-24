@@ -1,17 +1,17 @@
-import { Box, Button, Heading } from '@chakra-ui/react'
+import { Box, Button, Heading, useToast } from '@chakra-ui/react'
 import axios from 'axios'
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import styles from './SingleTodo.module.css'
+import styles from './SingleNote.module.css'
 
-export default function SingleTodo() {
+export default function SingleNote() {
     const [todo, setTodo] = useState([])
     const params = useParams();
     const navigate = useNavigate();
-    const dispatch = useDispatch()
+    const toast = useToast();
     const { token } = useSelector((store) => {
         return {
             token: store.AuthReducer.token
@@ -26,6 +26,14 @@ export default function SingleTodo() {
         })
             .then((res) => {
                 console.log(res)
+                toast({
+                    title: "Congratulation",
+                    description: "Note Deleted Successfull",
+                    status: "success",
+                    position: "top",
+                    duration: 2500,
+                    isClosable: true,
+                });
                 navigate('/todos')
             })
             .catch((e) => {

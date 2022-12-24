@@ -2,7 +2,7 @@ import { Box, Button, Heading, Input, useToast } from '@chakra-ui/react';
 import React from 'react'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { getUserLogin } from '../../Redux/AuthReducer/action';
 import styles from './Login.module.css'
 
@@ -11,7 +11,6 @@ export default function Login() {
     const [password, setPassword] = useState('');
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    const location = useLocation();
     const toast = useToast();
 
     const HandleLogin = () => {

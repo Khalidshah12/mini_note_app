@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import './App.css';
 import Sidebar from './Components/Sidebar';
-import TodoList from './Components/TodoList';
+import NoteList from './Components/NoteList';
 import { getTodos } from './Redux/AppReducer/action';
 import AllRoutes from './Routes/AllRoutes';
 
@@ -29,7 +29,7 @@ function App() {
       <Box w='15%'>
         <Sidebar />
       </Box>
-      {isAuth && location.pathname !== '/signup' && location.pathname !== '/login' && location.pathname !== '/' ? <Box w='30%' border={'1px solid black'}><TodoList /></Box> : null}
+      {isAuth && location.pathname !== '/signup' && location.pathname !== '/login' && location.pathname !== '/' ? <Box w='30%' border={'1px solid black'}><NoteList /></Box> : null}
       <Box w={isAuth && location.pathname !== '/signup' && location.pathname !== '/login' && location.pathname !== '/' ? '55%' : '85%'} border={'1px solid black'}>
         <AllRoutes />
       </Box>

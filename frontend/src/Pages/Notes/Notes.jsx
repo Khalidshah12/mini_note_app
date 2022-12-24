@@ -3,9 +3,9 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { getTodos } from '../../Redux/AppReducer/action'
-import styles from './Todos.module.css'
+import styles from './Notes.module.css'
 
-export default function Todos() {
+export default function Notes() {
     const dispatch = useDispatch()
 
     const { todos, isLoading, isError, token } = useSelector((store) => {
