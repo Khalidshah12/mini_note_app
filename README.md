@@ -5,23 +5,23 @@ Notes is a good helper to manage your schedules and notes. It gives you a quick 
 ## Have a Look 😍
 
 <p align="center">
-  <img src="./public/Images/note_01.png" alt='note_01 image' align="center" />
+  <img src="./public/note_01.png" alt='note_01 image' align="center" />
 </p>
 
 <p align="center">
-  <img src="./public/Images/note_02.png" alt='note_02 image' align="center" />
+  <img src="./public/note_02.png" alt='note_02 image' align="center" />
 </p>
 
 <p align="center">
-  <img src="./public/Images/note_03.png" alt='note_03 image' align="center" />
+  <img src="./public/note_03.png" alt='note_03 image' align="center" />
 </p>
 
 <p align="center">
-  <img src="./public/Images/note_04.png" alt='note_04 image' align="center" />
+  <img src="./public/note_04.png" alt='note_04 image' align="center" />
 </p>
 
 <p align="center">
-  <img src="./public/Images/note_05.png" alt='note_05 image' align="center" />
+  <img src="./public/note_05.png" alt='note_05 image' align="center" />
 </p>
 
 ## Vercel Link 
